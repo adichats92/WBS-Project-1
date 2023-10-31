@@ -1,5 +1,131 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.nav-link {
+	transition: 0.3s ease-in-out;
+}
+.nav-link:hover {
+	color: green;
+	transform: scale(1.1);
+}
+
+.navbar-brand > img {
+	transition: ease-in-out 0.3s;
+}
+.navbar-brand > img:hover {
+	transform: scale(1.2);
+}
+.card-img-top {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	position: relative;
+}
+
+.card:hover {
+	box-shadow: 0 4px 8px 0 green; /* Adjust values as needed */
+	transform: rotate(8deg);
+}
+
+.card {
+	transition: 0.4s ease-in-out; 
+	
+}
+
+
+.label {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.3125rem 0.625rem;
+	border-radius: 1.25rem;
+	color: white;
+	font-size: 0.75rem;
+	margin-right: 0.3125rem;
+}
+
+.breakfast-label {
+	position: absolute;
+	top: 0.625rem;
+	right: 0.625rem;
+	background-color: white;
+	padding: 0.3125rem 0.625rem;
+	color: black;
+}
+
+.label-group {
+	position: absolute;
+	top: 9.5rem;
+	left: 1.6rem;
+	gap: 0.625rem;
+}
+.time-label {
+	background-color: #ffc107;
+}
+
+.servings-label {
+	background-color: #007bff;
+}
+
+.difficulty-label {
+	background-color: #28a745;
+}
+
+.card {
+	border-radius: 20px;
+	width: 18rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.625rem;
+}
+
+main {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* .card-text, .card-title {
+    max-width: 80%;
+    padding: 1rem;
+} */
+
+.total-container {
+	padding: 1rem;
+}
+
+.fa-clock,
+.fa-user-friends,
+.fa-thumbs-up,
+.fa-apple-alt {
+	margin-right: 0.3rem;
+}
+
+#vegan-button {
+	background-color: #05673d;
+	padding: 0.6rem 1.8rem;
+	border-radius: 25px;
+	font-weight: 600;
+}
+
+.btn-primary {
+	border-radius: 10px;
+}
+
+.btn-primary:hover {
+	box-shadow: 0 4px 6px 0 green; /* Adjust values as needed */
+	transition: box-shadow 0.4s ease-in-out; /* Add transition for smooth effect */
+
+}
+
+.btn-primary {
+	transition: box-shadow 0.4s ease-in-out; /* Add transition for smooth effect */
+
 }
