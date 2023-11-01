@@ -193,6 +193,12 @@ main {
     overflow: hidden;
 }
 
+.carousel-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 
 @media (min-width: 1024px) {
 	.btn-primary:hover {
@@ -224,3 +230,10 @@ main {
 
 }
 
+@media (min-width: 992px) {
+	.carousel-inner {
+	  height: 700px;
+	}
+  
+
+  }
