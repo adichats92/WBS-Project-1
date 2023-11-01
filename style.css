@@ -6,27 +6,18 @@
 .nav-link {
 	transition: 0.3s ease-in-out;
 }
-.nav-link:hover {
-	color: green;
-	transform: scale(1.1);
-}
 
 .navbar-brand > img {
 	transition: ease-in-out 0.3s;
 }
-.navbar-brand > img:hover {
-	transform: scale(1.2);
-}
+
 .card-img-top {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	position: relative;
 }
 
-.card:hover {
-	box-shadow: 0 4px 8px 0 green; /* Adjust values as needed */
-	transform: rotate(8deg);
-}
+
 
 .card {
 	transition: 0.4s ease-in-out; 
@@ -119,13 +110,40 @@ main {
 	border-radius: 10px;
 }
 
-.btn-primary:hover {
-	box-shadow: 0 4px 6px 0 green; /* Adjust values as needed */
-	transition: box-shadow 0.4s ease-in-out; /* Add transition for smooth effect */
+
+
+.fa-ice-cream {
+    color: #007bff;
+    padding-right: 0.3rem;
+}
+
+.fa-smile, .fa-utensils {
+    padding-right: 0.4rem;
 
 }
 
-.btn-primary {
-	transition: box-shadow 0.4s ease-in-out; /* Add transition for smooth effect */
+
+
+
+@media (min-width: 1024px) {
+	.btn-primary:hover {
+		box-shadow: 0 4px 6px 0 green; /* Adjust values as needed */
+		transition: box-shadow 0.4s ease-in-out; /* Add transition for smooth effect */
+	
+	}
+
+	.card:hover {
+		box-shadow: 0 4px 8px 0 green; /* Adjust values as needed */
+		transform: rotate(8deg);
+	}
+
+	.nav-link:hover {
+		color: green;
+		transform: scale(1.1);
+	}
+	
+	.navbar-brand > img:hover {
+		transform: scale(1.2);
+	}
 
 }

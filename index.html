@@ -18,7 +18,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<nav class="navbar navbar-expand-md navbar-light bg-transparent">
+			<nav class="navbar navbar-expand-md navbar-light bg-transparent d-flex justify-content-between justify-content-md-end">
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -32,7 +32,7 @@
 				</button>
 
 				<div
-					class="collapse navbar-collapse justify-content-center"
+					class="collapse navbar-collapse justify-content-between"
 					id="navbarNav"
 				>
 					<ul class="navbar-nav">
@@ -50,7 +50,7 @@
 						</li>
 					</ul>
 				</div>
-				<a class="navbar-brand mx-auto col-3" href="./index.html">
+				<a class="navbar-brand mx-auto col-3 col-md-1 me-md-3" href="./index.html">
 					<img src="resources/logo1.png" alt="logo" width="80px" />
 				</a>
 			</nav>
@@ -108,14 +108,113 @@
 		</div>
 
 		<div class="container-fluid mt-5 m-auto">
-			<div class="col text-left ms-5 m-auto">
+			<div class="col text-center m-auto">
 				<button class="btn btn-primary" id="vegan-button">
 					Latest recipes
 				</button>
 			</div>
-			<div class="row">
+			<div class="row d-flex justify-content-evenly">
 				<!-- Card in section one -->
-				<div class="col-lg-4 col-md-4 mb-4">
+				<div class="col-lg-4 col-md-5 mb-4">
+					<div class="card mt-5 m-auto">
+						<div>
+							<img
+								src="./chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg"
+								class="card-img-top"
+								alt="Tacos avocado salsa"
+							/>
+							<button class="label breakfast-label">
+								<i class="fas fa-ice-cream"></i> Dessert
+							</button>
+							<div class="label-group ml-5">
+								<span class="label time-label"
+									><i class="fas fa-clock"></i> 35 min</span
+								>
+								<span class="label servings-label"
+									><i class="fas fa-user-friends"></i> 4 Servings</span
+								>
+								<span class="label difficulty-label"
+									><i class="fas fa-smile"></i> Easy</span
+								>
+							</div>
+							<div class="total-container">
+								<h5 class="card-title">Molten Chocolate Cake</h5>
+								<p class="card-text">
+									The iconic molten chocolate cake, created by Jean-Georges Vongerichten.
+								</p>
+								<a href="#" class="btn btn-primary">View Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-lg-4 col-md-5 mb-4">
+					<div class="card mt-5 m-auto">
+						<div>
+							<img
+								src="./chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg"
+								class="card-img-top"
+								alt="Tacos avocado salsa"
+							/>
+							<button class="label breakfast-label">
+								<i class="fas fa-utensils"></i> Lunch
+							</button>
+							<div class="label-group ml-5">
+								<span class="label time-label"
+									><i class="fas fa-clock"></i> 50 min</span
+								>
+								<span class="label servings-label"
+									><i class="fas fa-user-friends"></i> 2 Servings</span
+								>
+								<span class="label difficulty-label"
+									><i class="fas fa-thumbs-up"></i> Easy</span
+								>
+							</div>
+							<div class="total-container">
+								<h5 class="card-title">Reverse-Sear Steak</h5>
+								<p class="card-text">
+									Reverse-searing ensures uniform medium-rare steak with a crisp crust.
+								</p>
+								<a href="#" class="btn btn-primary">View Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-lg-4 col-md-5 mb-4">
+					<div class="card mt-5 m-auto">
+						<div>
+							<img
+								src="./chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg"
+								class="card-img-top"
+								alt="Tacos avocado salsa"
+							/>
+							<button class="label breakfast-label">
+								<i class="fas fa-apple-alt"></i> Breakfast
+							</button>
+							<div class="label-group ml-5">
+								<span class="label time-label"
+									><i class="fas fa-clock"></i> 5min</span
+								>
+								<span class="label servings-label"
+									><i class="fas fa-user-friends"></i> 2 Servings</span
+								>
+								<span class="label difficulty-label"
+									><i class="fas fa-thumbs-up"></i> Easy</span
+								>
+							</div>
+							<div class="total-container">
+								<h5 class="card-title">Tacos avocado salsa</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+								<a href="#" class="btn btn-primary">View Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-lg-4 col-md-5 mb-4">
 					<div class="card mt-5 m-auto">
 						<div>
 							<img
@@ -149,7 +248,7 @@
 				</div>
 
 				<!-- Card in section two -->
-				<div class="col-lg-4 col-md-4 mb-4">
+				<div class="col-lg-4 col-md-5 mb-4">
 					<div class="card mt-5 m-auto">
 						<div>
 							<img
@@ -183,7 +282,7 @@
 				</div>
 
 				<!-- Card in section three -->
-				<div class="col-lg-4 col-md-4 mb-4">
+				<div class="col-lg-4 col-md-5 mb-4">
 					<div class="card mt-5 m-auto">
 						<div>
 							<img
@@ -218,111 +317,7 @@
 			</div>
 		</div>
 
-		<div class="container-fluid mt-5">
-			<div class="row">
-				<!-- Card in section one -->
-				<div class="col-lg-4 col-md-4 mb-4">
-					<div class="card mt-5 m-auto">
-						<div>
-							<img
-								src="./chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg"
-								class="card-img-top"
-								alt="Tacos avocado salsa"
-							/>
-							<button class="label breakfast-label">
-								<i class="fas fa-apple-alt"></i> Breakfast
-							</button>
-							<div class="label-group ml-5">
-								<span class="label time-label"
-									><i class="fas fa-clock"></i> 5min</span
-								>
-								<span class="label servings-label"
-									><i class="fas fa-user-friends"></i> 2 Servings</span
-								>
-								<span class="label difficulty-label"
-									><i class="fas fa-thumbs-up"></i> Easy</span
-								>
-							</div>
-							<div class="total-container">
-								<h5 class="card-title">Tacos avocado salsa</h5>
-								<p class="card-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<a href="#" class="btn btn-primary">View Recipe</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Card in section two -->
-				<div class="col-lg-4 col-md-4 mb-4">
-					<div class="card mt-5 m-auto">
-						<div>
-							<img
-								src="./chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg"
-								class="card-img-top"
-								alt="Tacos avocado salsa"
-							/>
-							<button class="label breakfast-label">
-								<i class="fas fa-apple-alt"></i> Breakfast
-							</button>
-							<div class="label-group ml-5">
-								<span class="label time-label"
-									><i class="fas fa-clock"></i> 5min</span
-								>
-								<span class="label servings-label"
-									><i class="fas fa-user-friends"></i> 2 Servings</span
-								>
-								<span class="label difficulty-label"
-									><i class="fas fa-thumbs-up"></i> Easy</span
-								>
-							</div>
-							<div class="total-container">
-								<h5 class="card-title">Tacos avocado salsa</h5>
-								<p class="card-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<a href="#" class="btn btn-primary">View Recipe</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Card in section three -->
-				<div class="col-lg-4 col-md-4 mb-4">
-					<div class="card mt-5 m-auto">
-						<div>
-							<img
-								src="./chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg"
-								class="card-img-top"
-								alt="Tacos avocado salsa"
-							/>
-							<button class="label breakfast-label">
-								<i class="fas fa-apple-alt"></i> Breakfast
-							</button>
-							<div class="label-group">
-								<span class="label time-label"
-									><i class="fas fa-clock"></i> 5min</span
-								>
-								<span class="label servings-label"
-									><i class="fas fa-user-friends"></i> 2 Servings</span
-								>
-								<span class="label difficulty-label"
-									><i class="fas fa-thumbs-up"></i> Easy</span
-								>
-							</div>
-							<div class="total-container">
-								<h5 class="card-title">Tacos avocado salsa</h5>
-								<p class="card-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<a href="#" class="btn btn-primary">View Recipe</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 		<footer class="footer">
 			<div class="container mt-5 mb-5 m-auto">
 				<span class="text-muted">© 2023 Created by Aadil Denis Mihaela</span>
