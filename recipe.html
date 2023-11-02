@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<title>Cookbook Recipe</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body id="body">
+		<div class="container-fluid has-bg-img">
+			<nav class="navbar navbar-expand-md navbar-light bg-transparent d-flex justify-content-between justify-content-md-end">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div
+					class="collapse navbar-collapse justify-content-between"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Mihaela's</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Denis'</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Aadil's</a>
+						</li>
+					</ul>
+				</div>
+				<a class="navbar-brand mx-auto col-3 col-md-1 me-md-3" href="./index.html">
+					<img src="resources/logo1.png" alt="logo" width="80px" />
+				</a>
+			</nav>
+			<div
+				id="carouselExample"
+				class="carousel slide mt-3"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							src="chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg"
+							class="d-block w-100"
+							alt="Image 1"
+						/>
+						<!-- carousel-caption for Image 1 if needed -->
+					</div>
+					<div class="carousel-item">
+						<img
+							src="./resources/spices-ingredients-table.jpg"
+							class="d-block w-100"
+							alt="Image 2"
+						/>
+						<!-- carousel-caption for Image 2 if needed -->
+					</div>
+					<div class="carousel-item">
+						<img
+							src="./resources/top-view-powder-condiments.jpg"
+							class="d-block w-100 img-fluid"
+							alt="Image 3"
+						/>
+						<!-- carousel-caption for Image 3 if needed -->
+					</div>
+				</div>
+				<!-- Carousel controls -->
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExample"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExample"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+        
+        <div class="container-fluid my-5 text-center">
+            <div class="row mb-4">
+                <div class="col-md-6 col-lg-7 col-xl-8 ms-auto text-start">
+                    <h2>Ingredients</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ingredient</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ingredient 1</td>
+                                <td>Quantity 1</td>
+                            </tr>
+                            <tr>
+                                <td>Ingredient 3</td>
+                                <td>Quantity 3</td>
+                            </tr>
+							<tr>
+                                <td>Ingredient 4</td>
+                                <td>Quantity 4</td>
+                            </tr>
+							<tr>
+                                <td>Ingredient 5</td>
+                                <td>Quantity 5</td>
+                            </tr>
+							<tr>
+                                <td>Ingredient 6</td>
+                                <td>Quantity 6</td>
+                            </tr>
+							<tr>
+                                <td>Ingredient 7</td>
+                                <td>Quantity 7</td>
+                            </tr>
+							<tr>
+                                <td>Ingredient 8</td>
+                                <td>Quantity 8</td>
+                            </tr>
+							<tr>
+                                <td>Ingredient 9</td>
+                                <td>Quantity 9</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-5 col-lg-4 col-xl-3  m-auto text-start">
+                    <div class="card">
+                        <div class="card-body text-start">
+                            <h2 class="text-center">Info Box</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Preparation Time: 30 minutes</li>
+                                <li class="list-group-item">Cooking Time: 1 hour</li>
+                                <li class="list-group-item">Serving Time: 5 minutes</li>
+                                <li class="list-group-item">Resting Time: 15 minutes</li>
+                                <li class="list-group-item">Nutrition Score: 9/10</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-center mt-10 m-auto">
+                <div class="col-md-10">
+                    <h2>Detailed Recipe Description</h2>
+                    <p class="text-start">This text box can accommodate a detailed recipe description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, libero modi repellendus, laboriosam vero odit qui doloribus et asperiores laborum nulla accusantium cumque. Modi quos veritatis at delectus rem reiciendis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit possimus odit modi veniam ex alias quas illo voluptatem inventore ullam?</p>
+					<div class="directions">
+						<div class="step mb-4">
+							<h6>Step 1 - Gather the ingredients</h6>
+							<img src="lavacake-resources/step1.webp" alt="Step 1">
+						</div>
+						<div class="step mb-4">
+							<h6>Step 2 - Preheat oven to 450°F. Butter and lightly flour four 6-ounce ramekins. Tap out excess flour. Set the ramekins on a baking sheet.</h6>
+							<img src="lavacake-resources/s2.webp" alt="Step 2">
+						</div>
+						<div class="step mb-4">
+							<h6>Step 3 - In a double boiler, over simmering water, melt butter with chocolate</h6>
+							<img src="lavacake-resources/s3.webp" alt="Step 3">
+						</div>
+						<div class="step mb-4">
+							<h6>Step 4 - In a medium bowl, beat eggs with egg yolks, sugar, and salt at high speed until thickened and pale.</h6>
+							<img src="lavacake-resources/s4.webp" alt="Step 4">
+						</div>
+						<div class="step mb-4">
+							<h6>Step 5 - Whisk melted chocolate until smooth.</h6>
+							<img src="lavacake-resources/s5.webp" alt="Step 4">
+						</div>
+						<div class="step mb-4">
+							<h6>Step 6 - Quickly fold it into egg mixture, along with flour. </h6>
+							<img src="lavacake-resources/s6.webp" alt="Step 4">
+						</div>
+						<div class="step mb-4">
+							<h6>Step 7 - Spoon batter into prepared ramekins and bake for 12 minutes, or until sides of cakes are firm but centers are soft.</h6>
+							<img src="lavacake-resources/s7.webp" alt="Step 4">
+						</div>
+						<div class="step mb-4">
+							<h6>Step 8 - Let cakes cool in ramekins for 1 minute, then cover each with an inverted dessert plate. Carefully turn each cake over, let stand for 10 seconds, and then unmold. Serve immediately. </h6>
+							<img src="lavacake-resources/s8.webp" alt="Step 4">
+						</div>
+
+					</div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center mt-10">
+				<div class="m-auto rounded overflow-hidden d-flex align-items-center">
+					<img src="./resources/ndls.png" class="img-fluid" id="bottom-img" alt="Picture">
+				</div>
+            </div>
+        </div>
+
+		<footer class="footer d-flex justify-content-around align-items-center">
+			<div class="container mt-5 mb-5 m-auto">
+				<span class="text-muted">© 2023 Created by Aadil Denis Mihaela</span>
+			</div>
+			<button class="btn btn-primary m-auto" id="shareButton">
+				<i class="fas fa-share"></i>
+			</button>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js"></script>
+	</body>
+</html>

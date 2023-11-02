@@ -1,13 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Cookbook Group 1</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<title>Cookbook Group 1</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body id="hbody">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-md navbar-light bg-transparent d-flex justify-content-between justify-content-md-end">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div
+					class="collapse navbar-collapse justify-content-between"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="MihaelaLavacake.html">Mihaela's</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./steak-recipe.html">Denis'</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./biryani.html">Aadil's</a>
+						</li>
+					</ul>
+				</div>
+				<a class="navbar-brand mx-auto col-3 col-md-1 me-md-3" href="./index.html">
+					<img src="resources/new-logo.png" alt="logo" width="80px" />
+				</a>
+			</nav>
+			<div
+				id="carouselExample"
+				class="carousel slide mt-3"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							src="chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg"
+							class="d-block w-100"
+							alt="Image 1"
+						/>
+						<!-- carousel-caption for Image 1 if needed -->
+					</div>
+					<div class="carousel-item">
+						<img
+							src="./resources/spices-ingredients-table.jpg"
+							class="d-block w-100"
+							alt="Image 2"
+						/>
+						<!-- carousel-caption for Image 2 if needed -->
+					</div>
+					<div class="carousel-item">
+						<img
+							src="./resources/top-view-powder-condiments.jpg"
+							class="d-block w-100 img-fluid"
+							alt="Image 3"
+						/>
+						<!-- carousel-caption for Image 3 if needed -->
+					</div>
+				</div>
+				<!-- Carousel controls -->
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExample"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExample"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+
+		<div class="container-fluid mt-5 m-auto">
+			<div class="col text-center m-auto">
+				<button class="btn btn-primary" id="vegan-button">
+					Latest recipes
+				</button>
+			</div>
+			<div class="row d-flex justify-content-evenly">
+				<!-- Card in section one -->
+				<div class="col-lg-4 col-md-5 mb-4">
+					<div class="card mt-5 m-auto">
+						<div>
+							<img
+								src="./resources/chocolate-lava-cake-white-plate(1).jpg"
+								class="card-img-top"
+								alt="Tacos avocado salsa"
+							/>
+							<button class="label breakfast-label">
+								<i class="fas fa-ice-cream"></i> Dessert
+							</button>
+							<div class="label-group ml-5">
+								<span class="label time-label"
+									><i class="fas fa-clock"></i> 35 min</span
+								>
+								<span class="label servings-label"
+									><i class="fas fa-user-friends"></i> 4 Servings</span
+								>
+								<span class="label difficulty-label"
+									><i class="fas fa-smile"></i> Easy</span
+								>
+							</div>
+							<div class="total-container">
+								<h5 class="card-title">Molten Chocolate Cake</h5>
+								<p class="card-text">
+									The iconic molten chocolate cake, created by <b>Mihaela</b>.
+								</p>
+								<a href="MihaelaLavacake.html" class="btn btn-primary">View Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-lg-4 col-md-5 mb-4">
+					<div class="card mt-5 m-auto">
+						<div>
+							<img
+								src="./steak.jpg"
+								class="card-img-top"
+								alt="Tacos avocado salsa"
+							/>
+							<button class="label breakfast-label">
+								<i class="fas fa-utensils"></i> Lunch
+							</button>
+							<div class="label-group ml-5">
+								<span class="label time-label"
+									><i class="fas fa-clock"></i> 50 min</span
+								>
+								<span class="label servings-label"
+									><i class="fas fa-user-friends"></i> 2 Servings</span
+								>
+								<span class="label difficulty-label"
+									><i class="fas fa-thumbs-up"></i> Easy</span
+								>
+							</div>
+							<div class="total-container">
+								<h5 class="card-title">Reverse-Sear Steak</h5>
+								<p class="card-text">
+									Reverse-sear medium-rare steak. <b>PERSONALLY MADE BY DENIS</b>
+								</p>
+								<a href="./steak-recipe.html" class="btn btn-primary">View Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <!-- Card in section three -->
+                <div class="col-lg-4 col-md-5 mb-4">
+                    <div class="card mt-5 m-auto">
+                        <div>
+                            <img
+                                src="./resources/chicki.jpg"
+                                class="card-img-top"
+                                alt="Tacos avocado salsa"
+                            />
+                            <button class="label breakfast-label">
+                                <i class="fas fa-utensils"></i> Dinner
+                            </button>
+                            <div class="label-group">
+                                <span class="label time-label"
+                                    ><i class="fas fa-clock"></i> 75min</span
+                                >
+                                <span class="label servings-label"
+                                    ><i class="fas fa-user-friends"></i> 4 Servings</span
+                                >
+                                <span class="label difficulty-label"
+                                    ><i class="fas fa-thumbs-up"></i> Easy</span
+                                >
+                            </div>
+                            <div class="total-container">
+                                <h5 class="card-title">Chicken Biryani</h5>
+                                <p class="card-text">
+                                    A flavorful masterpiece that captures the essence.
+                                </p>
+                                <a href="./biryani.html" class="btn btn-primary">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-5 mb-4">
+					<div class="card mt-5 m-auto">
+						<div>
+							<img
+								src="./resources/top-view-cooked-bell-peppers-with-ground-meat-oil-dark-surface-meal-vegetables-food-meat-dolma.jpg"
+								class="card-img-top"
+								alt="Tacos avocado salsa"
+							/>
+							<button class="label breakfast-label">
+								<i class="fas fa-utensils"></i> Lunch
+							</button>
+							<div class="label-group ml-5">
+								<span class="label time-label"
+									><i class="fas fa-clock"></i> 60min</span
+								>
+								<span class="label servings-label"
+									><i class="fas fa-user-friends"></i> 6 Servings</span
+								>
+								<span class="label difficulty-label"
+									><i class="fas fa-thumbs-up"></i> Easy</span
+								>
+							</div>
+							<div class="total-container">
+								<h5 class="card-title">Bell-peppers with meat</h5>
+								<p class="card-text">
+									A quick and easy recipe that only dirties one pan.
+								</p>
+								<a href="#" class="btn btn-primary">View Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Card in section two -->
+				<div class="col-lg-4 col-md-5 mb-4">
+					<div class="card mt-5 m-auto">
+						<div>
+							<img
+								src="./resources/bandeja-paisa.webp"
+								class="card-img-top"
+								alt="Tacos avocado salsa"
+							/>
+							<button class="label breakfast-label">
+								<i class="fas fa-apple-alt"></i> Breakfast
+							</button>
+							<div class="label-group ml-5">
+								<span class="label time-label"
+									><i class="fas fa-clock"></i> 120 min</span
+								>
+								<span class="label servings-label"
+									><i class="fas fa-user-friends"></i> 4 Servings</span
+								>
+								<span class="label difficulty-label"
+									><i class="fas fa-skull-crossbones"></i> Hard</span
+								>
+							</div>
+							<div class="total-container">
+								<h5 class="card-title">Bandeja Paisa</h5>
+								<p class="card-text">
+									Hearty Colombian dish with beans, rice, meats, and avocado.
+								</p>
+								<a href="#" class="btn btn-primary">View Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Card in section three -->
+				<div class="col-lg-4 col-md-5 mb-4">
+					<div class="card mt-5 m-auto">
+						<div>
+							<img
+								src="./resources/lentil_soup1.jpg"
+								class="card-img-top"
+								alt="Tacos avocado salsa"
+							/>
+							<button class="label breakfast-label">
+								<i class="fas fa-utensils"></i> Dinner
+							</button>
+							<div class="label-group">
+								<span class="label time-label"
+									><i class="fas fa-clock"></i> 35 min</span
+								>
+								<span class="label servings-label"
+									><i class="fas fa-user-friends"></i> 4 Servings</span
+								>
+								<span class="label difficulty-label"
+									><i class="fas fa-thumbs-up"></i> Easy </span
+								>
+							</div>
+							<div class="total-container">
+								<h5 class="card-title">Lentil Soup</h5>
+								<p class="card-text">
+									The least sexy sounding soup on the planet.
+								</p>
+								<a href="./biryani.html" class="btn btn-primary">View Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+         <div class="cookie alert alert-dismissible fade show" role="alert">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-12 d-flex flex-column justify-content-center">
+                        <p class="mb-0 text-truncate-mobile">
+                            This website or its third-party tools use cookies, which are necessary for its functioning and required to achieve the purposes illustrated in the cookie policy.
+                            You accept the use of cookies by closing or dismissing this notice, <br class="d-none d-md-block"> by scrolling this page, by clicking a link or button or by continuing to browse otherwise.
+                        </p>
+                        <a href="#" class="read-more d-md-none d-inline-block">... read more</a>
+                        <div class="text-group">
+                            <button type="button" class="btn btn-light learn-more mt-2">Learn more and customize</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex align-items-end justify-content-end">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-danger reject" data-bs-dismiss="alert">Reject</button>
+                            <button type="button" class="btn btn-success accept ml-2" data-bs-dismiss="alert">Accept</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+		
+		<footer class="footer">
+			<div class="container mt-5 mb-5 m-auto">
+				<span class="text-muted">© 2023 Created by Aadil Denis Mihaela</span>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+
+        <script src="script.js"></script>
+	</body>
 </html>

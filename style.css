@@ -1,5 +1,298 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+.nav-link {
+	transition: 0.3s ease-in-out;
+}
+
+.navbar-brand > img {
+	transition: ease-in-out 0.3s;
+}
+
+.card-img-top {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	position: relative;
+}
+#body {
+	background: url("./resources/gbgx1.png") repeat fixed;
+	background-size: auto;
+	animation: slide 100s linear;
+}
+
+@keyframes slide {
+	0% {
+		background-position: left;
+	}
+
+	100% {
+		background-position: right;
+	}
+}
+
+#bottom-img {
+
+	animation: rotate 50s infinite linear;
+
+  
+	border-radius: 50%;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(-360deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.card {
+	transition: 0.4s ease-in-out;
+}
+
+.label {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.3125rem 0.625rem;
+	border-radius: 1.25rem;
+	color: white;
+	font-size: 0.75rem;
+	margin-right: 0.3125rem;
+}
+
+.breakfast-label {
+	position: absolute;
+	top: 0.625rem;
+	right: 0.625rem;
+	background-color: white;
+	padding: 0.3125rem 0.625rem;
+	color: black;
+}
+
+.label-group {
+	position: absolute;
+	top: 9.5rem;
+	left: 1.6rem;
+	gap: 0.625rem;
+}
+.time-label {
+	background-color: #ffc107;
+}
+
+.servings-label {
+	background-color: #007bff;
+}
+
+.difficulty-label {
+	background-color: #28a745;
+}
+
+.card {
+	border-radius: 20px;
+	width: 18rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.625rem;
+}
+
+main {
+	display: flex;
+	justify-content: space-around;
+}
+
+.total-container {
+	padding: 1rem;
+}
+
+.fa-clock,
+.fa-user-friends,
+.fa-thumbs-up,
+.fa-apple-alt{
+	margin-right: 0.3rem;
+}
+
+.fa-clock {
+	color: red;
+}
+
+.fa-skull-crossbones {
+	margin-right: 0.3rem;
+}
+
+#vegan-button {
+	background-color: #05673d;
+	padding: 0.6rem 1.8rem;
+	border-radius: 25px;
+	font-weight: 600;
+}
+
+.btn-primary {
+	border-radius: 10px;
+}
+
+.fa-ice-cream {
+	color: #007bff;
+	padding-right: 0.3rem;
+}
+
+.fa-smile,
+.fa-utensils {
+	padding-right: 0.4rem;
+}
+.cookie {
+	background-color: gray;
+	border-radius: 10px;
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+.cookie p {
+	color: black;
+	margin-bottom: 0;
+}
+
+.cookie .accept,
+.cookie .reject,
+.cookie .learn-more {
+	font-size: 19px;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.cookie .accept,
+.cookie .reject {
+	color: #fff !important;
+	border-radius: 32px;
+}
+
+.cookie .accept {
+	background-color: #007bff;
+}
+
+.cookie .reject {
+	background-color: #ff454d;
+}
+
+.cookie .learn-more {
+	background-color: lightgray;
+	color: #333 !important;
+	border: none;
+}
+
+.cookie .learn-more:hover {
+	background-color: #d4d4d4;
+}
+
+/* ... other styles ... */
+
+.button-group {
+	position: absolute;
+	right: 10px; /* or any other value to adjust the distance from the right side */
+	bottom: 10px; /* or any other value to adjust the distance from the bottom */
+}
+
+.text-group p {
+	min-width: 80%;
+}
+
+.container {
+	margin-left: 0;
+}
+
+.learn-more {
+	border-radius: 30px;
+}
+
+.text-truncate-mobile {
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* Number of lines to show */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.carousel-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#ciaran-text {
+	display: flex;
+	flex-direction: column;
+	font-size: 2rem;
+	text-align: center;
+	align-items: center;
+	font-weight: 900;
+	color: #FF454D;
+}
+
+
+#denis-text {
+	text-align: center;
+
+}
+
+
+@media (min-width: 1440px) {
+.container-fluid {
+        max-width: 60%; 
+    }
+
+	.col-md-4 {
+		width: 100%;
+	}
+}
+@media (min-width: 1024px) {
+	.btn-primary:hover {
+		box-shadow: 0 4px 6px 0 green; /* Adjust values as needed */
+		transition: box-shadow 0.4s ease-in-out; /* Add transition for smooth effect */
+	}
+
+	.card:hover {
+		box-shadow: 0 4px 8px 0 green; /* Adjust values as needed */
+		transform: rotate(8deg);
+	}
+
+	.nav-link:hover {
+		color: green;
+		transform: scale(1.1);
+	}
+
+	.navbar-brand > img:hover {
+		transform: scale(1.2);
+	}
+
+	.cookie .accept:hover,
+	.cookie .reject:hover {
+		background-color: #05673d;
+	}
+	.cookie .reject:hover {
+		background-color: #ff454d;
+	}
+}
+
+@media (min-width: 992px) {
+	.carousel-inner {
+		height: 700px;
+	}
+	.custom-max-width-lg {
+        max-width: 60%;
+    }
+
+  }
+
+  
