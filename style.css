@@ -34,7 +34,10 @@
 }
 
 #bottom-img {
+
 	animation: rotate 50s infinite linear;
+
+  
 	border-radius: 50%;
 }
 
