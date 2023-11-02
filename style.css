@@ -18,37 +18,41 @@
 	position: relative;
 }
 #body {
-    background: url('./resources/gbgx1.png') repeat fixed;
-    background-size: auto;
-    animation: slide 100s linear;
+	background: url("./resources/gbgx1.png") repeat fixed;
+	background-size: auto;
+	animation: slide 100s linear;
 }
 
 @keyframes slide {
-    0% {
-        background-position: left;
-		
-    }
-	
-    100% {
-        background-position: right;
-    }
+	0% {
+		background-position: left;
+	}
+
+	100% {
+		background-position: right;
+	}
 }
 
 #bottom-img {
-    animation: rotate 70s infinite linear;
+
+	animation: rotate 50s infinite linear;
+
+  
 	border-radius: 50%;
 }
 
-@keyframes rotate{
-    from{ transform: rotate(-360deg); }
-    to{ transform: rotate(360deg); }
+@keyframes rotate {
+	from {
+		transform: rotate(-360deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .card {
-	transition: 0.4s ease-in-out; 
-	
+	transition: 0.4s ease-in-out;
 }
-
 
 .label {
 	display: inline-flex;
@@ -108,7 +112,6 @@ main {
 	justify-content: space-around;
 }
 
-
 .total-container {
 	padding: 1rem;
 }
@@ -131,76 +134,72 @@ main {
 	border-radius: 10px;
 }
 
-
-
 .fa-ice-cream {
-    color: #007bff;
-    padding-right: 0.3rem;
+	color: #007bff;
+	padding-right: 0.3rem;
 }
 
-.fa-smile, .fa-utensils {
-    padding-right: 0.4rem;
-
+.fa-smile,
+.fa-utensils {
+	padding-right: 0.4rem;
 }
 .cookie {
-    background-color: gray;
-    border-radius: 10px;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 9999;
+	background-color: gray;
+	border-radius: 10px;
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 9999;
 }
 
 .cookie p {
-    color: black;
-    margin-bottom: 0;
+	color: black;
+	margin-bottom: 0;
 }
 
-.cookie .accept, .cookie .reject, .cookie .learn-more {
-    font-size: 19px;
-    margin-top: 10px;
-    margin-right: 5px;
+.cookie .accept,
+.cookie .reject,
+.cookie .learn-more {
+	font-size: 19px;
+	margin-top: 10px;
+	margin-right: 5px;
 }
 
-.cookie .accept, .cookie .reject {
-    color: #fff !important;
-    border-radius: 32px;
+.cookie .accept,
+.cookie .reject {
+	color: #fff !important;
+	border-radius: 32px;
 }
 
 .cookie .accept {
-    background-color: #007BFF;
+	background-color: #007bff;
 }
-
-
 
 .cookie .reject {
-    background-color: #FF454D;
+	background-color: #ff454d;
 }
 
-
-
 .cookie .learn-more {
-    background-color: lightgray;
-    color: #333 !important;
-    border: none;
+	background-color: lightgray;
+	color: #333 !important;
+	border: none;
 }
 
 .cookie .learn-more:hover {
-    background-color: #d4d4d4;
+	background-color: #d4d4d4;
 }
 
 /* ... other styles ... */
 
 .button-group {
-    position: absolute;
-    right: 10px; /* or any other value to adjust the distance from the right side */
-    bottom: 10px; /* or any other value to adjust the distance from the bottom */
+	position: absolute;
+	right: 10px; /* or any other value to adjust the distance from the right side */
+	bottom: 10px; /* or any other value to adjust the distance from the bottom */
 }
 
 .text-group p {
 	min-width: 80%;
-	
 }
 
 .container {
@@ -212,10 +211,10 @@ main {
 }
 
 .text-truncate-mobile {
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Number of lines to show */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* Number of lines to show */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .carousel-item img {
@@ -224,12 +223,20 @@ main {
 	object-fit: cover;
 }
 
+@media (min-width: 1440px) {
+	.container-fluid {
+		max-width: 60%;
+	}
+
+	.col-md-4 {
+		width: 100%;
+	}
+}
 
 @media (min-width: 1024px) {
 	.btn-primary:hover {
 		box-shadow: 0 4px 6px 0 green; /* Adjust values as needed */
 		transition: box-shadow 0.4s ease-in-out; /* Add transition for smooth effect */
-	
 	}
 
 	.card:hover {
@@ -241,24 +248,22 @@ main {
 		color: green;
 		transform: scale(1.1);
 	}
-	
+
 	.navbar-brand > img:hover {
 		transform: scale(1.2);
 	}
 
-	.cookie .accept:hover, .cookie .reject:hover {
+	.cookie .accept:hover,
+	.cookie .reject:hover {
 		background-color: #05673d;
 	}
 	.cookie .reject:hover {
-		background-color: #FF454D;
+		background-color: #ff454d;
 	}
-
 }
 
 @media (min-width: 992px) {
 	.carousel-inner {
-	  height: 700px;
+		height: 700px;
 	}
-  
-
-  }
+}
