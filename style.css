@@ -116,7 +116,15 @@ main {
 .fa-clock,
 .fa-user-friends,
 .fa-thumbs-up,
-.fa-apple-alt {
+.fa-apple-alt{
+	margin-right: 0.3rem;
+}
+
+.fa-clock {
+	color: red;
+}
+
+.fa-skull-crossbones {
 	margin-right: 0.3rem;
 }
 
@@ -223,8 +231,31 @@ main {
 	height: 100%;
 	object-fit: cover;
 }
+#ciaran-text {
+	display: flex;
+	flex-direction: column;
+	font-size: 2rem;
+	text-align: center;
+	align-items: center;
+	font-weight: 900;
+	color: #FF454D;
+}
+
+#denis-text {
+	text-align: center;
+
+}
 
 
+@media (min-width: 1440px) {
+.container-fluid {
+        max-width: 60%; 
+    }
+
+	.col-md-4 {
+		width: 100%;
+	}
+}
 @media (min-width: 1024px) {
 	.btn-primary:hover {
 		box-shadow: 0 4px 6px 0 green; /* Adjust values as needed */
@@ -259,6 +290,10 @@ main {
 	.carousel-inner {
 	  height: 700px;
 	}
-  
+	.custom-max-width-lg {
+        max-width: 60%;
+    }
 
   }
+
+  
