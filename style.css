@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 .nav-link {
 	transition: 0.3s ease-in-out;
 }
@@ -16,8 +17,32 @@
 	border-top-right-radius: 20px;
 	position: relative;
 }
+#body {
+    background: url('./resources/gbgx1.png') repeat fixed;
+    background-size: auto;
+    animation: slide 100s linear;
+}
 
+@keyframes slide {
+    0% {
+        background-position: left;
+		
+    }
+	
+    100% {
+        background-position: right;
+    }
+}
 
+#bottom-img {
+    animation: rotate 50s infinite linear;
+	border-radius: 50%;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
 
 .card {
 	transition: 0.4s ease-in-out; 

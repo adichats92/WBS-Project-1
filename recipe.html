@@ -16,8 +16,8 @@
 		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
-		<div class="container-fluid">
+	<body id="body">
+		<div class="container-fluid has-bg-img">
 			<nav class="navbar navbar-expand-md navbar-light bg-transparent d-flex justify-content-between justify-content-md-end">
 				<button
 					class="navbar-toggler"
@@ -124,38 +124,38 @@
                                 <td>Quantity 1</td>
                             </tr>
                             <tr>
-                                <td>Ingredient 2</td>
-                                <td>Quantity 2</td>
+                                <td>Ingredient 3</td>
+                                <td>Quantity 3</td>
                             </tr>
 							<tr>
-                                <td>Ingredient 2</td>
-                                <td>Quantity 2</td>
+                                <td>Ingredient 4</td>
+                                <td>Quantity 4</td>
                             </tr>
 							<tr>
-                                <td>Ingredient 2</td>
-                                <td>Quantity 2</td>
+                                <td>Ingredient 5</td>
+                                <td>Quantity 5</td>
                             </tr>
 							<tr>
-                                <td>Ingredient 2</td>
-                                <td>Quantity 2</td>
+                                <td>Ingredient 6</td>
+                                <td>Quantity 6</td>
                             </tr>
 							<tr>
-                                <td>Ingredient 2</td>
-                                <td>Quantity 2</td>
+                                <td>Ingredient 7</td>
+                                <td>Quantity 7</td>
                             </tr>
 							<tr>
-                                <td>Ingredient 2</td>
-                                <td>Quantity 2</td>
+                                <td>Ingredient 8</td>
+                                <td>Quantity 8</td>
                             </tr>
 							<tr>
-                                <td>Ingredient 2</td>
-                                <td>Quantity 2</td>
+                                <td>Ingredient 9</td>
+                                <td>Quantity 9</td>
                             </tr>
                             <!-- Add more rows as needed -->
                         </tbody>
                     </table>
                 </div>
-                <div class="col-md-5 col-lg-4 col-xl-3  ms-auto text-start">
+                <div class="col-md-5 col-lg-4 col-xl-3  m-auto text-start">
                     <div class="card">
                         <div class="card-body text-start">
                             <h2 class="text-center">Info Box</h2>
@@ -170,28 +170,26 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-4 mt-10">
-                <div class="col-md-12">
+            <div class="container-fluid d-flex justify-content-center mt-10 m-auto">
+                <div class="col-md-10">
                     <h2>Detailed Recipe Description</h2>
-                    <p class="text-start">This text box can accommodate a detailed recipe description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, libero modi repellendus, laboriosam vero odit qui doloribus et asperiores laborum nulla accusantium cumque. Modi quos veritatis at delectus rem reiciendis!</p>
+                    <p class="text-start">This text box can accommodate a detailed recipe description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, libero modi repellendus, laboriosam vero odit qui doloribus et asperiores laborum nulla accusantium cumque. Modi quos veritatis at delectus rem reiciendis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit possimus odit modi veniam ex alias quas illo voluptatem inventore ullam?</p>
                 </div>
             </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <!-- Content for the bottom container -->
-                </div>
-            </div>
-            <div class="row justify-content-center">
-				<div class="col-md-6 rounded overflow-hidden d-flex align-items-center">
-					<img src="./resources/biriyani.jpg" class="img-fluid" alt="Picture">
+            <div class="d-flex align-items-center justify-content-center mt-10">
+				<div class="m-auto rounded overflow-hidden d-flex align-items-center">
+					<img src="./resources/ndls.png" class="img-fluid" id="bottom-img" alt="Picture">
 				</div>
             </div>
         </div>
 
-		<footer class="footer">
+		<footer class="footer d-flex justify-content-around align-items-center">
 			<div class="container mt-5 mb-5 m-auto">
 				<span class="text-muted">© 2023 Created by Aadil Denis Mihaela</span>
 			</div>
+			<button class="btn btn-primary m-auto" id="shareButton">
+				<i class="fas fa-share"></i>
+			</button>
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script
@@ -199,5 +197,6 @@
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 			crossorigin="anonymous"
 		></script>
+		<script src="script.js"></script>
 	</body>
 </html>
