@@ -50,3 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   
+  // Add an event listener to the button
+document.getElementById('btn-back-to-top').addEventListener('click', function() {
+  // Scroll the page to the top
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
