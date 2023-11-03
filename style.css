@@ -23,6 +23,13 @@
 	animation: slide 100s linear;
 }
 
+#btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000; 
+  }
+
 @keyframes slide {
 	0% {
 		background-position: left;
@@ -198,12 +205,12 @@ main {
 	background-color: #d4d4d4;
 }
 
-/* ... other styles ... */
+
 
 .button-group {
 	position: absolute;
-	right: 10px; /* or any other value to adjust the distance from the right side */
-	bottom: 10px; /* or any other value to adjust the distance from the bottom */
+	right: 10px;
+	bottom: 10px; 
 }
 
 .text-group p {
@@ -218,9 +225,19 @@ main {
 	border-radius: 30px;
 }
 
+.button-group {
+    display: flex;
+    align-items: center;
+}
+
+#shareButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .text-truncate-mobile {
 	display: -webkit-box;
-	-webkit-line-clamp: 3; /* Number of lines to show */
+	-webkit-line-clamp: 3; 
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
@@ -246,6 +263,10 @@ main {
 
 }
 
+#myContainer {
+	margin-left: 0
+}
+
 
 @media (min-width: 1440px) {
 .container-fluid {
@@ -258,12 +279,12 @@ main {
 }
 @media (min-width: 1024px) {
 	.btn-primary:hover {
-		box-shadow: 0 4px 6px 0 green; /* Adjust values as needed */
-		transition: box-shadow 0.4s ease-in-out; /* Add transition for smooth effect */
+		box-shadow: 0 4px 6px 0 green; 
+		transition: box-shadow 0.4s ease-in-out; 
 	}
 
 	.card:hover {
-		box-shadow: 0 4px 8px 0 green; /* Adjust values as needed */
+		box-shadow: 0 4px 8px 0 green; 
 		transform: rotate(8deg);
 	}
 
